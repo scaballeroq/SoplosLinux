@@ -1,4 +1,3 @@
-#!/bin/bash
 # =============================================================================
 # FUNCIONES PARA PODMAN (podman-functions.sh)
 # =============================================================================
@@ -12,7 +11,7 @@ pexec() {
         echo "Uso: pexec <nombre_o_id_contenedor> [comando]"
         return 1
     fi
-    local cmd="${2:-bash}"
+    local cmd="${2:-zsh}"
     podman exec -it "$1" "$cmd"
 }
 

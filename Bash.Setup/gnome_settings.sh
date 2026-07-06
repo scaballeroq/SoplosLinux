@@ -3,7 +3,7 @@
 # ALIASES PARA GNOME (gnome_settings.sh)
 # =============================================================================
 # Este archivo contiene aliases para gestionar extensiones y comportamientos
-# del escritorio GNOME. Se sourcea desde .bashrc.
+# del escritorio GNOME. Se sourcea desde .zshrc.
 # Para la configuración inicial de gsettings, usar Setup/gnome-settings.sh
 # =============================================================================
 

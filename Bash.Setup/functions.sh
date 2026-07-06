@@ -1,6 +1,5 @@
-#!/bin/bash
 # =============================================================================
-# FUNCIONES BASH (functions.sh)
+# FUNCIONES ZSH (functions.sh)
 # =============================================================================
 # Colección de funciones y utilidades para potenciar la terminal.
 #

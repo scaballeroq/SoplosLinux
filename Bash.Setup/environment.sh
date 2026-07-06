@@ -59,7 +59,7 @@ fi
 
 # Activación de MISE (Gestor de lenguajes)
 if command -v mise &> /dev/null; then
-    eval "$(mise activate bash)"
+    eval "$(mise activate zsh)"
 fi
 
 # Soporte para GPG en la terminal

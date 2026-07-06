@@ -29,20 +29,20 @@ echo "ℹ️ Instalando Starship..."
 # El método más fiable en Debian para tener la última versión
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 
-# Configuración Modular (Siguiendo el estilo de Fedora)
-if [ -d "/etc/bashrc.d" ] || [ -d "$HOME/.bashrc.d" ]; then
-    mkdir -p ~/.bashrc.d
-    cat <<EOF > ~/.bashrc.d/starship.sh
+# Configuración Modular para ZSH
+if [ -d "/etc/zshrc.d" ] || [ -d "$HOME/.zshrc.d" ]; then
+    mkdir -p ~/.zshrc.d
+    cat <<EOF > ~/.zshrc.d/starship.zsh
 # Starship Prompt Configuration
-eval "\$(starship init bash)"
+eval "\$(starship init zsh)"
 EOF
-    echo "✅ Configuración modular de Starship creada en ~/.bashrc.d/starship.sh"
+    echo "✅ Configuración modular de Starship creada en ~/.zshrc.d/starship.zsh"
 else
-    # Si no hay soporte para .bashrc.d, lo añadimos a .bashrc
-    if ! grep -q "starship init bash" ~/.bashrc; then
-        echo '' >> ~/.bashrc
-        echo '# Starship Prompt' >> ~/.bashrc
-        echo 'eval "$(starship init bash)"' >> ~/.bashrc
+    # Si no hay soporte para .zshrc.d, lo añadimos a .zshrc
+    if ! grep -q "starship init zsh" ~/.zshrc; then
+        echo '' >> ~/.zshrc
+        echo '# Starship Prompt' >> ~/.zshrc
+        echo 'eval "$(starship init zsh)"' >> ~/.zshrc
     fi
 fi
 
